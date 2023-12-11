@@ -1,11 +1,15 @@
 <script>
-import AppComponent from "./components/AppComponent.vue"
+import PageMain from "./components/PageMain.vue"
+import PageHeader from "./components/PageHeader.vue"
+import PageFooter from "./components/PageFooter.vue"
 
 import { store } from "./store.js" //state management
 
 export default {
 	components: {
-		AppComponent
+		PageHeader,
+		PageMain,
+		PageFooter
 	},
 	data() {
 		return {
@@ -16,17 +20,23 @@ export default {
 
 	},
 	methods: {
-		doThings() {
-			console.log("App.vue does things");
-		}
+
 	}
 }
 </script>
 
 <template>
+	<header>
+		<PageHeader />
+	</header>
+
 	<main>
-		<AppComponent />
+		<PageMain />
 	</main>
+
+	<footer>
+		<PageFooter />
+	</footer>
 </template>
 
 <style lang="scss">

@@ -2,7 +2,6 @@
 import { store } from "../store.js" //state management
 
 export default {
-    name: "AppComponent",
     data() {
         return {
             store
@@ -19,7 +18,7 @@ export default {
 
 <template>
     <div>
-        <h1>Sono un componente!</h1>
+        <p>Sono un componente!</p>
     </div>
 </template>
 
