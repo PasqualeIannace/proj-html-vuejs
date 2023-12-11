@@ -17,7 +17,8 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="jumbo">
+        <img src="/img/h1-rev-img-01.jpg" alt="">
         <p>Sono un componente!</p>
     </div>
 </template>
@@ -25,6 +26,13 @@ export default {
 <style scoped lang="scss">
 // importo variabili
 // @use './styles/partials/variables' as *;
+.jumbo {
+    width: 100vw;
 
-// ...qui eventuale SCSS di AppComponent
+    img {
+        width: 100%;
+        height: 68em;
+        object-fit: cover;
+    }
+}
 </style>

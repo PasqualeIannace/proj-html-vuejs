@@ -17,16 +17,20 @@ export default {
 </script>
 
 <template>
-    <div class="navBar">
-        <img class="logo" src="/img/logo-img-01.png" alt="">
-        <nav>
-            <ul>
-                <li v-for="i in menu.menuLinks"> {{ i.text }} </li>
-                <font-awesome-icon :icon="['fas', 'magnifying-glass']" rotation=90 />
-                <font-awesome-icon :icon="['fas', 'bars-staggered']" />
-            </ul>
-            <!-- <img class="arrow" src="/svg/svg-6.svg" alt=""> -->
-        </nav>
+    <div class="relative">
+        <div class="navBar">
+            <img class="logo" src="/img/logo-img-01.png" alt="">
+            <nav>
+                <ul>
+                    <li v-for="i in menu.menuLinks">
+                        <img class="arrow" src="/svg/svg-6.svg" alt="">
+                        <a href="#"> {{ i.text }} </a>
+                    </li>
+                    <a href=""><font-awesome-icon :icon="['fas', 'magnifying-glass']" rotation=90 /></a>
+                    <a href=""><font-awesome-icon :icon="['fas', 'bars-staggered']" /></a>
+                </ul>
+            </nav>
+        </div>
     </div>
 </template>
 
@@ -34,10 +38,13 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 .navBar {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 7em;
+    width: 100vw;
+    max-width: 100%;
 }
 
 .logo {
@@ -48,6 +55,14 @@ export default {
 .arrow {
     width: 1.7em;
     filter: invert(38%) sepia(93%) saturate(3245%) hue-rotate(350deg) brightness(104%) contrast(109%);
+}
+
+.relative {
+    position: relative;
+}
+
+a:visited {
+    color: #212121f0;
 }
 
 ul {
@@ -63,13 +78,32 @@ ul {
     }
 
     li {
+        position: relative;
         padding: 0 1.5em;
         font-size: 0.85em;
         font-weight: bold;
         color: #212121f0;
 
-        &:hover {
+        img {
+            position: absolute;
+            left: -0.5em;
+            top: -0.2em;
+            opacity: 0;
+        }
+
+        &:hover img {
+            transition: 200ms;
+            opacity: 1;
+        }
+
+
+        &:hover a {
             color: #FF4613;
+            transition: 200ms;
+        }
+
+        a {
+            text-decoration: none;
         }
     }
 }
