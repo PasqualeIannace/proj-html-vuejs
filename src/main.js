@@ -8,10 +8,11 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
-library.add(faHome);
+library.add(faMagnifyingGlass, faBarsStaggered);
 
 window.vue = {};
 window.vue.App = createApp(App)

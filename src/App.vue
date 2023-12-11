@@ -48,5 +48,7 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 
-// ...qui eventuale SCSS di App.vue
+header {
+	padding: 0 5em;
+}
 </style>
