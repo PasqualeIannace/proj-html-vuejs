@@ -27,11 +27,12 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 .jumbo {
-    width: 100vw;
+    max-width: 100%;
 
     img {
-        width: 100%;
-        height: 68em;
+        width: 100vw;
+        height: 100vh;
+        max-width: 100%;
         object-fit: cover;
     }
 }
