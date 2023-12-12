@@ -34,7 +34,7 @@ export const menu = reactive({
 });
 
 export const jumbo = reactive({
-    silides: [
+    slides: [
         {
             title: "We are Everlead",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua.",
