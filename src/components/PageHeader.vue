@@ -59,6 +59,7 @@ export default {
 
 .relative {
     position: relative;
+    z-index: 1;
 }
 
 a:visited {
