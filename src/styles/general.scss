@@ -17,7 +17,7 @@ body {
 .btn {
     width: 16em;
     height: 4.5em;
-    margin: 1.5em 1.5em 0 0;
+    margin: 2.5em 1.5em 0 0;
     display: flex;
     align-items: center;
     font-size: 0.8em;
@@ -61,6 +61,24 @@ body {
     color: white;
 }
 
+.bgGray {
+    background-color: #FAFAFA;
+}
+
 .arrowBlack {
     filter: brightness(0) saturate(100%) invert(18%) sepia(0%) saturate(2684%) hue-rotate(308deg) brightness(100%) contrast(91%);
+}
+
+.px5 {
+    padding: 0 5em;
+}
+
+.mx5 {
+    margin: 0 5em;
+}
+
+.line {
+    height: 0.1em;
+    width: 4em;
+    margin: 2em auto;
 }
