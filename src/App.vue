@@ -46,7 +46,7 @@ export default {
 
 <style scoped lang="scss">
 // importo variabili
-// @use './styles/partials/variables' as *;
+@use './styles/partials/variables' as *;
 
 header {
 	padding: 0 5em;

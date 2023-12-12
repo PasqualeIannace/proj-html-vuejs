@@ -54,7 +54,7 @@ export default {
 
 .arrow {
     width: 1.7em;
-    filter: invert(38%) sepia(93%) saturate(3245%) hue-rotate(350deg) brightness(104%) contrast(109%);
+    filter: brightness(0) saturate(100%) invert(54%) sepia(93%) saturate(1192%) hue-rotate(341deg) brightness(100%) contrast(100%);
 }
 
 .relative {
