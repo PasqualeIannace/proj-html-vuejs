@@ -93,5 +93,24 @@ export default {
 .specialities {
     display: flex;
     justify-content: space-evenly;
+    text-align: center;
+
+    .miniature {
+        padding: 2em 0 10em 0;
+
+        h3 {
+            font-family: serif;
+            font-size: 1.3em;
+            padding: 1em 0 0.5em 0;
+        }
+
+        p {
+            color: #1E1E1E;
+            font-weight: lighter;
+            font-family: system-ui;
+            padding: 0 1em;
+            font-size: 1.1em;
+        }
+    }
 }
 </style>
