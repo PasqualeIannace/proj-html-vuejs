@@ -11,7 +11,6 @@ export default {
     },
     methods: {
         next() {
-            console.log("Hai cliccato");
             if (this.counter < this.jumbo.slides.length - 1) {
                 this.counter++;
             } else {
@@ -88,7 +87,6 @@ export default {
     height: 100vh;
 
     .relative {
-        position: relative;
         height: 100%;
 
         .jumboImg {

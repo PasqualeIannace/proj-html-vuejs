@@ -1,4 +1,15 @@
 @use './partials/_variables.scss' as *;
+@import url(https://db.onlinewebfonts.com/c/fa9e46a74f135bdaa4729f6b6ea7b5d8?family=Tuesday+Night+Regular);
+
+@font-face {
+    font-family: "Tuesday Night Regular";
+    src: url("https://db.onlinewebfonts.com/t/fa9e46a74f135bdaa4729f6b6ea7b5d8.eot");
+    src: url("https://db.onlinewebfonts.com/t/fa9e46a74f135bdaa4729f6b6ea7b5d8.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/fa9e46a74f135bdaa4729f6b6ea7b5d8.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/fa9e46a74f135bdaa4729f6b6ea7b5d8.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/fa9e46a74f135bdaa4729f6b6ea7b5d8.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/fa9e46a74f135bdaa4729f6b6ea7b5d8.svg#Tuesday Night Regular")format("svg");
+}
 
 * {
     margin: 0;
@@ -46,6 +57,14 @@ body {
 
 .dFlex {
     display: flex;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
 }
 
 .bgWhite {

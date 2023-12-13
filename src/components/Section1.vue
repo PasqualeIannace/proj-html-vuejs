@@ -3,6 +3,7 @@
 </script>
 
 <template>
+    <!-- section 2 -->
     <div class="bgGray">
         <div class="bgWhite mx5">
             <div class="titleSection">
@@ -42,7 +43,7 @@
 // importo variabili
 // @use './styles/partials/variables' as *;
 
-// sezione 1
+// section 2
 .titleSection {
     text-align: center;
     padding-top: 2.5em;

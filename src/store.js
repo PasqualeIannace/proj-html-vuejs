@@ -52,3 +52,17 @@ export const jumbo = reactive({
         },
     ],
 });
+
+export const somePic = reactive({
+    slides: [
+        {
+            img: "/img/h1-img-01.jpg",
+        },
+        {
+            img: "/img/h1-img-02.jpg",
+        },
+        {
+            img: "/img/h1-img-03.jpg",
+        },
+    ],
+});
