@@ -66,3 +66,17 @@ export const somePic = reactive({
         },
     ],
 });
+
+export const upcomingEvents = reactive({
+    slides: [
+        {
+            img: "/img/h1-img-07.jpg",
+        },
+        {
+            img: "/img/h1-img-08.jpg",
+        },
+        {
+            img: "/img/h1-img-09.jpg",
+        },
+    ],
+});
