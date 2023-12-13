@@ -84,7 +84,7 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 .bgRounded {
-    top: -45%;
+    top: -14%;
     left: 6%;
 }
 
