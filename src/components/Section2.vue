@@ -244,6 +244,7 @@ export default {
 
 // section 4
 .creative {
+    padding: 3em 5em 8em 5em;
 
     .left {
         width: 50%;
