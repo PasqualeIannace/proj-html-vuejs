@@ -96,6 +96,67 @@ export default {
             </div>
         </div>
     </div>
+
+
+    <!-- section 4 -->
+    <div class="creative dFlex px5">
+        <div class="left">
+            <h3>Creative Leader</h3>
+            <span>.</span>
+            <div class="line bgOrange"></div>
+            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do nulla eiusmod tempor incididunt
+                ut labore et
+                dolore magna aliqua. Ut etim enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in sociis.
+
+            </p>
+            <p class="rMore">READ MORE</p>
+        </div>
+
+        <div class="right">
+            <div class="skill">
+                <span>Mentorship</span>
+                <span>78%</span>
+            </div>
+            <div class="bar">
+                <div class="allBar">
+                    <div class="bgOrange w78"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>Education</span>
+                <span>95%</span>
+            </div>
+            <div class="bar">
+                <div class="allBar">
+                    <div class="bgOrange w95"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>Learning</span>
+                <span>65%</span>
+            </div>
+            <div class="bar">
+                <div class="allBar">
+                    <div class="bgOrange w65"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>Motivation</span>
+                <span>83%</span>
+            </div>
+            <div class="bar">
+                <div class="allBar">
+                    <div class="bgOrange w83"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </template>
 
 <style scoped lang="scss">
@@ -189,6 +250,84 @@ export default {
         .border {
             border: 1px solid #ececec;
             border-style: solid none solid none;
+        }
+    }
+}
+
+// section 4
+.creative {
+
+    .left {
+        width: 50%;
+
+        h3 {
+            font-size: 2.5em;
+            font-family: serif;
+            display: inline-block;
+        }
+
+        span {
+            font-family: serif;
+            font-size: 3em;
+            color: #FF4613;
+        }
+
+        .line {
+            height: 0.15em;
+            width: 4em;
+            margin: 1em 0;
+
+        }
+
+        .lorem {
+            padding-right: 4em;
+        }
+    }
+
+    .right {
+        width: 50%;
+
+        .skill {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                font-family: serif;
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+        }
+
+        .bar {
+            width: 100%;
+            padding: 0.5em 0;
+            margin-bottom: 1.4em;
+
+            .bgOrange {
+                height: 0.3em;
+            }
+
+            .w78 {
+                width: 78%;
+            }
+
+            .w95 {
+                width: 95%;
+            }
+
+            .w65 {
+                width: 65%;
+            }
+
+            .w83 {
+                width: 83%;
+            }
+
+            .allBar {
+                width: 100%;
+                background-color: #e1e1e1;
+                height: 0.01em;
+            }
         }
     }
 }
