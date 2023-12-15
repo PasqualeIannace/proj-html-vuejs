@@ -4,16 +4,18 @@ import PageHeader from "./components/PageHeader.vue"
 import PageFooter from "./components/PageFooter.vue"
 
 import { store } from "./store.js" //state management
+import { register } from 'swiper/element/bundle';
+register();
 
 export default {
 	components: {
 		PageHeader,
 		PageMain,
-		PageFooter
+		PageFooter,
 	},
 	data() {
 		return {
-			store
+			store,
 		}
 	},
 	mounted() {

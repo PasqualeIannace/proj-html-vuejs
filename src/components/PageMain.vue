@@ -1,5 +1,13 @@
 <script>
 import { store } from "../store.js" //state management
+import { register } from 'swiper/element/bundle'; //caroselli!!!
+
+register();
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Pagination } from 'swiper/modules';
 
 import Jumbo from "./Jumbo.vue"
 import Section1 from "./Section1.vue"
@@ -10,6 +18,14 @@ export default {
         Jumbo,
         Section1,
         Section2,
+        Swiper,
+        SwiperSlide,
+    },
+
+    setup() {
+        return {
+            modules: [Pagination],
+        };
     },
 
     data() {
@@ -22,7 +38,6 @@ export default {
 
     },
     mounted() {
-
     }
 }
 </script>
@@ -76,6 +91,39 @@ export default {
                     <p class="rMore">READ MORE</p>
                 </div>
             </div>
+
+            <!-- swiper test -->
+            <swiper :slidesPerView="3" :spaceBetween="30" :pagination="{
+                clickable: true,
+            }" :modules="modules" class="mySwiper">
+                <swiper-slide>
+                    <div class="card relative">
+                        <img src="/img/h1-img-01.jpg" alt="">
+                        <div class="infoImg bgOrange absolute">
+                            <span>Business, Leading</span>
+                        </div>
+
+                        <div class="infoEvent dFlex">
+                            <div class="date">
+                                <a href="#">5 May, 2019</a>
+                            </div>
+                            <div class="guest">
+                                <a href="#">Amanda Doe</a>
+                            </div>
+                        </div>
+                        <div class="cardTitle">
+                            <a class="title" href="#">Team Business</a>
+                            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eius mas tellus
+                                dolor</p>
+                            <p class="rMore">READ MORE</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
+                <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
+                <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
+                <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+            </swiper>
         </div>
     </div>
 </template>
@@ -158,5 +206,29 @@ export default {
     .infoEvent {
         padding: 1.4em 0 0.5em 0;
     }
+}
+
+// SWIPER
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 </style>
