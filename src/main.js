@@ -10,10 +10,13 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
+import { faTag } from '@fortawesome/free-solid-svg-icons'
+import { faClock } from '@fortawesome/free-regular-svg-icons'
+import { faUser } from '@fortawesome/free-regular-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faMagnifyingGlass, faBarsStaggered, faFacebook);
+library.add(faMagnifyingGlass, faBarsStaggered, faTag, faClock, faUser, faFacebook);
 
 window.vue = {};
 window.vue.App = createApp(App)

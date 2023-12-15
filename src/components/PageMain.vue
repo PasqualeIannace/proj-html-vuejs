@@ -1,8 +1,6 @@
 <script>
 import { store } from "../store.js" //state management
-import { register } from 'swiper/element/bundle'; //caroselli!!!
 
-register();
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -70,44 +68,27 @@ export default {
                 <img class="arrow right" src="/svg/svg-6.svg" alt="">
             </a>
 
-
-            <div class="card relative">
-                <img src="/img/h1-img-01.jpg" alt="">
-                <div class="infoImg bgOrange absolute">
-                    <span>Business, Leading</span>
-                </div>
-
-                <div class="infoEvent dFlex">
-                    <div class="date">
-                        <a href="#">5 May, 2019</a>
-                    </div>
-                    <div class="guest">
-                        <a href="#">Amanda Doe</a>
-                    </div>
-                </div>
-                <div class="cardTitle">
-                    <a class="title" href="#">Team Business</a>
-                    <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eius mas tellus dolor</p>
-                    <p class="rMore">READ MORE</p>
-                </div>
-            </div>
-
             <!-- swiper test -->
             <swiper :slidesPerView="3" :spaceBetween="30" :pagination="{
                 clickable: true,
             }" :modules="modules" class="mySwiper">
                 <swiper-slide>
-                    <div class="card relative">
-                        <img src="/img/h1-img-01.jpg" alt="">
-                        <div class="infoImg bgOrange absolute">
-                            <span>Business, Leading</span>
+                    <div class="card">
+                        <div class="imgCard relative">
+                            <img src="/img/h1-img-01.jpg" alt="">
+                            <div class="infoImg bgOrange absolute">
+                                <font-awesome-icon :icon="['fas', 'tag']" style="color: #ffffff;" />
+                                <span>Business, Leading</span>
+                            </div>
                         </div>
 
                         <div class="infoEvent dFlex">
                             <div class="date">
+                                <font-awesome-icon :icon="['far', 'clock']" size="xs" style="color: #ff4613;" />
                                 <a href="#">5 May, 2019</a>
                             </div>
                             <div class="guest">
+                                <font-awesome-icon :icon="['far', 'user']" size="xs" style="color: #ff4613;" />
                                 <a href="#">Amanda Doe</a>
                             </div>
                         </div>
@@ -119,7 +100,63 @@ export default {
                         </div>
                     </div>
                 </swiper-slide>
-                <swiper-slide>Slide 2</swiper-slide><swiper-slide>Slide 3</swiper-slide>
+
+
+                <swiper-slide>
+                    <div class="card">
+                        <div class="imgCard relative">
+                            <img src="/img/h1-blog-img-01.jpg" alt="">
+                            <div class="infoImg bgOrange absolute">
+                                <font-awesome-icon :icon="['fas', 'tag']" style="color: #ffffff;" />
+                                <span>Business, Leading</span>
+                            </div>
+                        </div>
+
+                        <div class="infoEvent dFlex">
+                            <div class="date">
+                                <font-awesome-icon :icon="['far', 'clock']" size="xs" style="color: #ff4613;" />
+                                <a href="#">5 May, 2019</a>
+                            </div>
+                            <div class="guest">
+                                <font-awesome-icon :icon="['far', 'user']" size="xs" style="color: #ff4613;" />
+                                <a href="#">Amanda Doe</a>
+                            </div>
+                        </div>
+                        <div class="cardTitle">
+                            <a class="title" href="#">New Business Day</a>
+                            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eius mas tellus
+                                dolor</p>
+                            <p class="rMore">READ MORE</p>
+                        </div>
+                    </div>
+                </swiper-slide><swiper-slide>
+                    <div class="card">
+                        <div class="imgCard relative">
+                            <img src="/img/h1-blog-img-02.jpg" alt="">
+                            <div class="infoImg bgOrange absolute">
+                                <font-awesome-icon :icon="['fas', 'tag']" style="color: #ffffff;" />
+                                <span>Business, Leading</span>
+                            </div>
+                        </div>
+
+                        <div class="infoEvent dFlex">
+                            <div class="date">
+                                <font-awesome-icon :icon="['far', 'clock']" size="xs" style="color: #ff4613;" />
+                                <a href="#">5 May, 2019</a>
+                            </div>
+                            <div class="guest">
+                                <font-awesome-icon :icon="['far', 'user']" size="xs" style="color: #ff4613;" />
+                                <a href="#">Amanda Doe</a>
+                            </div>
+                        </div>
+                        <div class="cardTitle">
+                            <a class="title" href="#">Boost Motivation</a>
+                            <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eius mas tellus
+                                dolor</p>
+                            <p class="rMore">READ MORE</p>
+                        </div>
+                    </div>
+                </swiper-slide>
                 <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
                 <swiper-slide>Slide 6</swiper-slide><swiper-slide>Slide 7</swiper-slide>
                 <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
@@ -175,7 +212,6 @@ export default {
 }
 
 .card {
-    width: 23em;
 
     a {
         text-decoration: none;
@@ -197,14 +233,26 @@ export default {
     }
 
     .infoImg {
-        bottom: 40%;
+        bottom: -10px;
         right: 5%;
         padding: 0.8em 1.3em;
         font-size: 0.9em;
+
+        span {
+            padding-left: 0.5em;
+        }
     }
 
     .infoEvent {
         padding: 1.4em 0 0.5em 0;
+
+        .date {
+            padding-right: 0.3em;
+        }
+
+        a {
+            padding: 0 0.3em;
+        }
     }
 }
 
@@ -215,10 +263,6 @@ export default {
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
