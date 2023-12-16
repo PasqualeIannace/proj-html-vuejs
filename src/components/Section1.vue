@@ -79,7 +79,7 @@ export default {
                     <img class="arrow left rotate180" src="/svg/svg-6.svg" alt="">
                 </button>
                 <button v-on:click="next()" href="#">
-                    <img class="arrow right" src="/svg/svg-6.svg" alt="">
+                    <img class="arrow right arrowFix" src="/svg/svg-6.svg" alt="">
                 </button>
             </div>
 
