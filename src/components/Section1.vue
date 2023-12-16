@@ -160,6 +160,7 @@ export default {
 .container {
     background-color: #FAFAFA;
     height: 45em;
+    overflow: hidden;
 
     .carosello {
         padding: 10em 0 0 10em;
